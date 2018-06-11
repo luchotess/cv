@@ -1,0 +1,76 @@
+.box-with-shadow {
+    border: 1px solid lightgray;
+    border-radius: 40px;
+    padding: 40px;
+    box-shadow: 0 4px 55px -4px rgba(0,0,0,0.2);
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: box-shadow .3s;
+}
+
+.box-with-shadow:hover {
+    box-shadow: 0 4px 55px -4px rgba(0,0,0,0.4);
+}
+
+.box-with-shadow.has-title h3 {
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.box-with-shadow.has-title h3:hover {
+    color: darkgray;
+}
+
+.profile-details {
+    float: left;
+    padding-left: 50px;
+    width: 70%;
+}
+
+.profile-picture {
+    width: 30%;
+    max-width: 130px;
+    border-radius: 100%;
+
+    float: left;
+}
+
+.is-half {
+    width: calc(50% - 40px);
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 200px;
+}
+
+footer {
+    text-align: right;
+    padding: 40px;
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-bottom: 20px;
+    }
+
+    .profile-details, .profile-picture {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .is-half {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
